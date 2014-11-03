@@ -6,6 +6,10 @@
   color: #000;
   text-shadow: 0px 0px 0.3em #cf9;
   background: #fff url('images/vim-background.png') center no-repeat;
+
+  h2 {
+    text-align: center;
+  }
 }
 
 #Cover {
@@ -22,4 +26,7 @@
     margin-top: 36px;
     font-size: 64px;
   }
+}
+
+#History2 {
 }
