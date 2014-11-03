@@ -1,0 +1,25 @@
+---
+# vim:set sts=2 sw=2 tw=0:
+---
+
+.slide, .slide.cover {
+  color: #000;
+  text-shadow: 0px 0px 0.3em #cf9;
+  background: #fff url('images/vim-background.png') center no-repeat;
+}
+
+#Cover {
+  h2, h3 {
+    color: #390;
+    text-align:center;
+  }
+    
+  h2 {
+    font-size: 84px;
+  }
+
+  h3 {
+    margin-top: 36px;
+    font-size: 64px;
+  }
+}
