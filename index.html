@@ -9,41 +9,98 @@ layout: slide
   <p>MURAOKA Taro (a.k.a. KoRoN or @kaoriya)</p>
 </header>
 
-<section class="slide cover h" id="Cover"><div>
+<section class="slide cover logo" id="First"><div>
+</div></section>
+
+<section class="slide cover" id="Cover"><div>
   <h2>Identity of the Vim</h2>
-  <h3>ユーザの心構え</h3>
+  <h3>Vimの未来・役割<br />ユーザーの心構え</h3>
 </div></section>
 
 <section class="slide" id="SelfIntroduction"><div>
   <h2>自己紹介</h2>
-  <img style='height: 350px; float: right;' src='images/avatar.jpg' alt="">
+  <img style='height: 250px; float: right; margin-left: 0.5em;' src='images/avatar.jpg' alt="">
   <ul>
-    <li>MURAOKA Taro/村岡太郎</li>
-    <li>a.k.a: KoRoN</li>
-    <li><a href='http://www.kaoriya.net/' target='_blank'>http://www.kaoriya.net/</a></li>
-    <li>twitter: @kaoriya</li>
-    <li>github: koron</li>
+    <li>MURAOKA Taro/村岡太郎 (KoRoN, <a target="sub" href="https://twitter.com/kaoriya">@kaoriya</a>)</li>
+    <li><a target="sub" href='http://www.kaoriya.net/' target='_blank'>http://www.kaoriya.net/</a></li>
+    <li>正規表現日本語化, Windows版配布, マニュアル日本語化, C/Migemo,
+      Chalice, 文字列テキストオブジェクト, codic-vim</li>
+    <li>JavaScript, Ruby, Java, C/C++, Perl, C#, etc... <strong>golang</strong></li>
+    <li>Webアプリ, Android, 組み込み/携帯電話, 3D CG, 文字列処理, 圧縮, データ構造, 最適化, ニューラルネット, 遺伝アルゴリズム, ハード工作</li>
   </ul>
+</div></section>
+
+<section class="slide shout"><div>
+  <h2>Identity?</h2>
+</div></section>
+
+<section class="slide" id="WhatIsIdentity"><div>
+  <h2>アイデンティティとは？</h2>
+  <ul>
+    <li>同一性</li>
+    <li>正体、身元</li>
+    <li>独自性、主体性、帰属意識</li>
+    <li>個性、作風、芸風</li>
+    <li>らしさ</li>
+  </ul>
+  from <a target="sub" href="http://ejje.weblio.jp/content/identity">Weblio</a> or so.
+</div></section>
+
+<section class="slide" id="ImportanceOfIdentity"><div>
+  <h2>この場での定義</h2>
+  <ul>
+    <li>「らしい」= 得意なこと / デザインに含まれている
+      <ul>
+        <li>行指向の編集</li>
+        <li>高速な起動</li>
+        <li>拡張がしやすい</li>
+      </ul>
+    </li>
+    <li>「らしくない」= 不得意なこと / デザインに含まれていない
+      <ul>
+        <li>文字指向の編集</li>
+        <li>グラフィカルな表現</li>
+        <li>拡張がしにくい</li>
+      </ul>
+    </li>
+  </ul>
+  <div>
+  </div>
+</div></section>
+
+<section class="slide shout"><div>
+  <h2>「らしい」はそれ自体が強み</h2>
+</div></section>
+
+<section class="slide shout"><div>
+  <h2>「らしくない」は覆すことが強み</h2>
 </div></section>
 
 <section class="slide" id="Motivation"><div>
   <h2>モチベーション</h2>
   <ul>
-    <li><a href="http://ll.jus.or.jp/2014/about">LL Diver 2014</a> エディタ対決</li>
-    <li class="next">ライバルの衰退
-      <ul>
-        <li>Emacs ェ…</li>
-      </ul>
-    </li>
-    <li class="next">新しいエディタの登場
+    <li><a target="sub" href="http://ll.jus.or.jp/2014/about">LL Diver 2014</a> エディタ対決 (2014/08/23)</li>
+    <li>新しいエディタの登場/台頭
       <ul>
         <li>Sublime</li>
         <li>atom</li>
         <li>neovim</li>
       </ul>
     </li>
-    <li class="next">Vimのアイデンティティ=強み(と弱み)を知れば未来のあり方が見えてくる</li>
+    <li>ライバルの衰退
+      <ul>
+        <li>Emacs ェ…</li>
+      </ul>
+    </li>
   </ul>
+</div></section>
+
+<section class="slide shout"><div>
+  <h2>
+    アイデンティティ<br />
+    <span>＝</span><br />
+    未来のあり方
+  </h2>
 </div></section>
 
 <section class="slide" id="History"><div>
@@ -63,25 +120,107 @@ layout: slide
 <section class="slide" id="History2"><div>
   <h2>Vimに至る歴史/アイデンティティ</h2>
   <table>
-    <tr><th>それ以前</th><td><span class="next">
+    <tr><th>それ以前</th><td><span>
           バイナリファイル、固定長レコード
         </span></td></tr>
-    <tr><th>UNIX</th><td><span class="next">
+    <tr><th>UNIX</th><td><span>
           テキストファイル、パイプ、etc
         </span></td></tr>
-    <tr><th>ed/sed</th><td><span class="next">
+    <tr><th>ed/sed</th><td><span>
           行指向のインタラクティブな編集<br />
           exモードの操作体系
         </span></td></tr>
-    <tr><th>ex/vi</th><td><span class="next">
+    <tr><th>ex/vi</th><td><span>
           hjklに代表される<br />
           Visualモード(=normalモード)の操作体系
         </span></td></tr>
   </table>
 </div></section>
 
+<section class="slide"><div>
+  <h2>Identity of the Vim</h2>
+  <table>
+    <tr><th>モーダル</th><td>○</td></tr>
+    <tr><th>テキストオブジェクト</th><td>◎</td></tr>
+    <tr><th>マルチプラットフォーム</th><td>○</td></tr>
+    <tr><th>Vimスクリプト</th><td>△</td></tr>
+    <tr><th>シンタックスハイライト</th><td>☓</td></tr>
+    <tr><th>vim-jp = ユーザー</th><td>◎</td></tr>
+  </table>
+</div></section>
+
+<section class="slide shout"><div>
+  <h2>Vimユーザーの<br />Identityは?</h2>
+</div></section>
+
+<section class="slide"><div>
+  <h2>Vim Ideal Users</h2>
+  <ul>
+    <li>複数の言語にチャレンジ。1つだけならVimなんか要らない!</li>
+    <li>多彩な分野、ジャンルにチャレンジ。1つだけなら(ry</li>
+  </ul>
+</div></section>
+
+<section class="slide shout"><div>
+  <h2>Javaだけなら<br />Eclipseを使え!</h2>
+</div></section>
+
+<section class="slide shout"><div>
+  <h2>iOSだけなら<br />Xcodeから<br />出てくんな!</h2>
+</div></section>
+
+<section class="slide shout"><div>
+  <h2>JSだけなら<br />atomとか良い<br />らしいっすよ?</h2>
+</div></section>
+
+<section class="slide shout"><div>
+  <h2>つまり…</h2>
+</div></section>
+
+<section class="slide shout"><div>
+  <h2>Vimを使うなら<br />色々やろう!</h2>
+</div></section>
+
+<section class="slide"><div>
+  <h2>ユーザーが色々やる意義</h2>
+  <ul>
+    <li>複数言語に触れる →ボキャブラリーが増える →設計・考えの幅が広がる<br />
+      (<a target="sub" href="http://mikaduki2.cocolog-nifty.com/blog/2010/11/038-3753.html">霊長類最強の男「カレリン」の言葉</a>)</li>
+    <li>多彩な分野に携わる →予期せぬところで分野同士が関連してくる</li>
+    <li>異なる役割を担う →立場を変えると見えるものが異なる</li>
+  </ul>
+</div></section>
+
+<section class="slide shout"><div>
+  <h2>色々やるなら<br/>Vimを使おう!</h2>
+</div></section>
+
+<section class="slide" id=""><div>
+  <h2>Vimで色々やる意義</h2>
+  <ul>
+    <li>便利だった機能・操作が別の用途に</li>
+    <li>不便さがVim自体の改善・拡張に</li>
+  </ul>
+  <h2>得たものをVimへ還元</h2>
+</div></section>
+
+<section class="slide shout"><div>
+    <h2>Vimがもっと<br />便利になる<br />(ﾏｯﾁﾎﾟﾝﾌﾟ)</h2>
+</div></section>
+
 <!--
+<section class="slide shout"><div>
+  <h2></h2>
+</div></section>
+
 <section class="slide" id=""><div>
   <h2></h2>
 </div></section>
 -->
+
+<section class="slide shout"><div>
+<h2>ありがとう<br />ございました</h2>
+</div></section>
+
+<section class="slide cover logo" id="Last"><div>
+</div></section>
